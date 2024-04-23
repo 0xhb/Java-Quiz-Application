@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Question {
     int id;
     String question;
@@ -44,5 +46,15 @@ public class Question {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", question='" + question + '\'' +
+                ", options=" + Arrays.toString(options) +
+                ", answer='" + answer + '\'' +
+                '}';
     }
 }
