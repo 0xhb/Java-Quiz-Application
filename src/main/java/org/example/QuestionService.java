@@ -30,4 +30,15 @@ public class QuestionService {
         }
         System.out.println("Final Score: " + score);
     }
+
+    public void updateQuestion(int oldId, int newId, String question, String[] options, String answer) {
+        for (Question q : questions) {
+            if (q.getId() == oldId){
+                q.setId(newId);
+                q.setQuestion(question);
+                q.setOptions(options);
+                q.setAnswer(answer);
+            }
+        }
+    }
 }
