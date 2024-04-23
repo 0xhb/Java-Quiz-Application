@@ -6,6 +6,14 @@ public class Question {
     String[] options;
     String answer;
 
+    public Question() {}
+    public Question(int id, String question, String[] options, String answer) {
+        this.id = id;
+        this.question = question;
+        this.options = options;
+        this.answer = answer;
+    }
+
     public String getAnswer() {
         return answer;
     }
